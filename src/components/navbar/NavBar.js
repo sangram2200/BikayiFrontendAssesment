@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { ReactComponent as Logo } from "./nobelLogo.svg";
+import React, { Component } from 'react';
+import { ReactComponent as Logo } from './nobelLogo.svg';
 
 //navigation bar styles
-import "./NavBar.css";
+import './NavBar.css';
 
 class NavBar extends Component {
   state = { clicked: false };
@@ -16,7 +16,7 @@ class NavBar extends Component {
       <>
         <nav className="NavbarItems">
           <h1 className="navbar-logo">
-            Nobel Winners
+            Nobel Prize Winners
             <i className="fab fa-react">
               <Logo />
             </i>
