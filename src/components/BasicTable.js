@@ -33,6 +33,7 @@ export const BasicTable = data => {
       } else if (search === '') {
         return value;
       }
+      return value;
     })
     .map(value => currentData.push(value));
 
