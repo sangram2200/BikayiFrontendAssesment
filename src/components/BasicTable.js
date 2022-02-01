@@ -11,7 +11,7 @@ export const BasicTable = data => {
   const indexOfLastData = currentPage * dataPerPage;
   const indexOfFirstData = indexOfLastData - dataPerPage;
 
-  let displayData, displayData2, displayData3;
+  let displayData, displayData2;
   displayData = data.data.prizes.map(x => {
     const y = { ...x };
     return y;
