@@ -1,0 +1,82 @@
+.contain {
+  width: 75%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+.select {
+  max-width: 500px;
+  padding-bottom: 10px;
+  margin: auto;
+  padding-right: 15px;
+}
+
+.select p {
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  display: block;
+  width: 60%;
+  text-align: center;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow-x: auto;
+  /* overflow: scroll; */
+  border-radius: 5px;
+}
+
+thead,
+tfoot,
+tbody,
+tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  max-width: 100%;
+  max-height: 800px;
+  /* overflow: scroll; */
+}
+
+tbody {
+  display: block;
+  /* overflow: auto; */
+  table-layout: fixed;
+  max-height: 800px;
+}
+
+table td,
+table th {
+  border: 2px solid #ddd;
+  padding: 8px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
