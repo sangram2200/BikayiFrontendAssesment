@@ -32,7 +32,7 @@ export const BasicTable = data => {
         return value;
       } else if (
         value.year.includes(search) &&
-        value.category.includes(sCategory)
+        value.category.includes(sCategory.toLowerCase())
       ) {
         return value;
       }
