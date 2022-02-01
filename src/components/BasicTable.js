@@ -6,7 +6,7 @@ export const BasicTable = data => {
   const [currentPage, setCurrentPage] = useState(1);
   const [dataPerPage] = useState(8);
   const [search, setSearch] = useState('');
-  const [searchCategory, setSearchCategory] = useState('');
+  const [sCategory, setSCategory] = useState('');
 
   const indexOfLastData = currentPage * dataPerPage;
   const indexOfFirstData = indexOfLastData - dataPerPage;
@@ -28,9 +28,12 @@ export const BasicTable = data => {
 
   displayData
     .filter(value => {
-      if (value.year.includes(search)) {
+      if (search === '' && sCategory === '') {
         return value;
-      } else if (search === '') {
+      } else if (
+        value.year.includes(search) &&
+        value.category.includes(sCategory)
+      ) {
         return value;
       }
       return false;
@@ -46,7 +49,7 @@ export const BasicTable = data => {
   });
 
   const paginate = pageNumber => setCurrentPage(pageNumber);
-  console.log(currentData);
+  // console.log(currentData);
 
   return (
     <>
@@ -62,11 +65,11 @@ export const BasicTable = data => {
         />
         <input
           type={'text'}
-          placeholder="SCategory not working...."
+          placeholder="Search Category ...."
           style={{ padding: '5px' }}
           onChange={event => {
-            setSearchCategory(event.target.value);
-            console.log(searchCategory);
+            setSCategory(event.target.value);
+            // console.log(sCategory);
           }}
         />
       </div>
