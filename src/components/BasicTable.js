@@ -62,7 +62,7 @@ export const BasicTable = data => {
         />
         <input
           type={'text'}
-          placeholder="Search Category...."
+          placeholder="Search Category not working...."
           style={{ padding: '5px' }}
           onChange={event => {
             setSearchCategory(event.target.value);
